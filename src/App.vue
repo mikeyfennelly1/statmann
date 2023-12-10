@@ -3,6 +3,7 @@
     <NavbarItem></NavbarItem>
     <HeaderItem></HeaderItem>
     <ChartOne></ChartOne>
+    <SidebarItem></SidebarItem>
   </div>
 </template>
 
@@ -10,6 +11,8 @@
 import HeaderItem from './components/header.vue';
 import NavbarItem from './components/navbar.vue'
 import ChartOne from './components/chart1.vue';
+import SidebarItem from './components/sidebar.vue'
+
 
 
 export default {
@@ -18,6 +21,7 @@ export default {
     NavbarItem,
     HeaderItem,
     ChartOne,
+    SidebarItem,
   },
 }
 </script>
