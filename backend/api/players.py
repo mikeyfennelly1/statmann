@@ -5,5 +5,5 @@ from . import bp
 def get_players():
     # Get query parameters from the URL
     name = request.args.get('name')
-    # Your code to query the players dataset
+    # Your code to query the players dataset,
     return jsonify({"message": name})
