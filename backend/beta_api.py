@@ -1,7 +1,11 @@
 from flask import Flask
 from flask_restful import Resource, Api, reqparse, abort
+from flask_cors import CORS
+from nba_api.stats.endpoints import playercareerstats
+
 
 app = Flask("VideoAPI")
+CORS(app)
 api = Api(app)
 
 parser = reqparse.RequestParser()
@@ -12,6 +16,9 @@ videos = {
     'video2': {'title': 'Why matlab is best language ever'}
 }
 
+career = playercareerstats.PlayerCareerStats(player_id='203999') 
+career.get_json()
+print(career.get_json())
 
 class Video(Resource):
 
