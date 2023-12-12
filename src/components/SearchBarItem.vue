@@ -19,14 +19,16 @@ export default {
     },
     methods: {
         async searchPlayers() {
-            axios.get(`http://localhost:5000/videos/${this.searchTerm}`, {})
-                .then(response => {
-                    this.message = response.data.title
-                    console.log(this.message)
+            try {
+                const players = await axios.get(`http://localhost:5000/players`, {
+                    params: {
+                        name: this.searchTerm
+                    }
                 })
-                .catch(error => {
-                    console.log(error)
-                })
+                console.log(players)
+            } catch (error) {
+                console.error(error)
+            }
         }
     },
     name: 'SearchBarItem'
