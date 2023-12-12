@@ -15,7 +15,7 @@ import ChartOne from './components/chart1.vue';
 import SidebarItem from './components/sidebar.vue'
 import SearchBarItem from './components/SearchBarItem.vue'
 
-import axios from 'axios'
+// import axios from 'axios'
 
 
 
@@ -28,16 +28,16 @@ export default {
     SidebarItem,
     SearchBarItem,
   },
-  mounted() {
-    axios.get('http://localhost:5000/videos/video2', {})
-      .then(response => {
-        this.message = response.data.title;
-        console.log(`This is this.mesage: ${this.message}`)
-      })
-      .catch(error => {
-        console.error('Error fetching data: ', error);
-      });
-    }
+  // mounted() {
+  //   axios.get('http://localhost:5000/videos/video2', {})
+  //     .then(response => {
+  //       this.message = response.data.title;
+  //       console.log(`This is this.mesage: ${this.message}`)
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching data: ', error);
+  //     });
+  //   }
   }
 </script>
 <style>
