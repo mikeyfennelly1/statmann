@@ -2,9 +2,9 @@
     <div class="container border border-dark">
         <input type="text" placeholder="Search Players" v-model="searchTerm" @input="searchPlayers()">
         <p>{{ searchTerm }}</p>
-        <button onclick class="submit bg-dark">
-            submit
-        </button>
+        <ul>
+            <li >{{ playersFullName }}</li>
+        </ul>
     </div>
 </template>
 <script>
@@ -14,18 +14,21 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            searchTerm: ''
+            searchTerm: '',
+            playersFullName: '',
         }
     },
-    methods: {
-        async searchPlayers() {
-            try {
-                const players = await axios.get(`http://localhost:5000/players`, {
-                    params: {
+        methods: {
+            async searchPlayers() {
+                try {
+                    const players = await axios.get(`http://localhost:5000/players`, {
+                        params: {
                         name: this.searchTerm
                     }
                 })
-                console.log(players)
+                this.players = players.data[0]
+                this.playersFullName = this.players["full_name"]
+                console.log(this.playersFullName)
             } catch (error) {
                 console.error(error)
             }

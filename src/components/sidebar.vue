@@ -14,7 +14,17 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
+
 export default {
+    async data() {
+        try {
+            return axios.get(`http://localhost:5000/players`)
+        } catch (error) {
+            console.error(error)
+            return []
+        }
+    },
     name: 'SidebarItem'
 }
 </script>
