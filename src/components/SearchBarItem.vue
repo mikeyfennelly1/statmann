@@ -1,9 +1,8 @@
 <template>
     <div class="container border border-dark">
         <input type="text" placeholder="Search Players" v-model="searchTerm" @input="searchPlayers()">
-        <p>{{ searchTerm }}</p>
-        <ul>
-            <li >{{ playersFullName }}</li>
+        <ul style="background-color: black;" class="border bg-dark">
+            <li style="font-size: xx-large; list-style-type: none;" class="bg-dark">{{ playersFullName }}: {{playerID}}</li>
         </ul>
     </div>
 </template>
@@ -16,6 +15,7 @@ export default {
         return {
             searchTerm: '',
             playersFullName: '',
+            playerID: {type: Number},
         }
     },
         methods: {
@@ -28,7 +28,7 @@ export default {
                 })
                 this.players = players.data[0]
                 this.playersFullName = this.players["full_name"]
-                console.log(this.playersFullName)
+                this.playerID = this.players["id"]
             } catch (error) {
                 console.error(error)
             }

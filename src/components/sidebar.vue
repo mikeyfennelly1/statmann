@@ -5,9 +5,9 @@
             Dropdown button
         </button>
         <ul class="dropdown-menu">
-            <li><a style="background-color: red;"  class="dropdown-item bg-secondary" href="#">Action</a></li>
-            <li><a style="background-color: red;"  class="dropdown-item bg-secondary" href="#">Another action</a></li>
-            <li><a style="background-color: red;"  class="dropdown-item bg-secondary" href="#">Something else here</a></li>
+            <li><a class="dropdown-item bg-secondary" href="#">Action</a></li>
+            <li><a class="dropdown-item bg-secondary" href="#">Another action</a></li>
+            <li><a class="dropdown-item bg-secondary" href="#">Something else here</a></li>
         </ul>
         </div>
 
