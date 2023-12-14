@@ -11,7 +11,10 @@
             <input type="checkbox" name="allPlayers">
             <label for="allPlayers">All Players</label>
         </div>
-        <input type="text" placeholder="Search Players" v-model="searchTerm" @input="searchPlayers()">
+        <p>Search Players</p>
+        <input type="text" placeholder="Search Players"  v-model="searchTermPlayer" @input="searchPlayers()">
+        <p>Search Teams</p>
+        <input type="text" placeholder="Search Teams"  v-model="searchTermTeam" @input="searchTeams()">
         <ul style="background-color: black;" class="border bg-dark">
             <li style="font-size: xx-large; list-style-type: none;" class="bg-dark">{{ playersFullName }}: {{playerID}}</li>
         </ul>
@@ -33,11 +36,11 @@
 <script>
 import axios from 'axios'
 
-
 export default {
     data() {
         return {
-            searchTerm: '',
+            searchTermPlayer: '',
+            searchTermTeam: '',
             playersFullName: '',
             playerID: {type: Number},
             careerStats: '',
@@ -45,11 +48,11 @@ export default {
         }
     },
         methods: {
-        async searchPlayers() {
+            async searchPlayers() {
             try {
                 const players = await axios.get(`http://localhost:5000/players`, {
                     params: {
-                    name: this.searchTerm
+                    name: this.searchTermPlayer
                 }
             })
             this.players = players.data[0]
