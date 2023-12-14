@@ -62,6 +62,20 @@ export default {
                 console.error(error)
             }
         },
+        async searchTeams() {
+            try {
+                const teams = await axios.get(`http://localhost:5000/teams`, {
+                    params: {
+                    name: this.searchTermTeam
+                }
+            })
+            this.teams = teams.data[0]
+            this.teamsFullName = this.teams["full_name"]
+            this.playerID = this.teams["id"]
+            } catch (error) {
+                console.error(error)
+            }
+        },
         async getCareerStats() {
             try {
                 const careerStats = await axios.get(`http://localhost:5000/career_stats`, {
