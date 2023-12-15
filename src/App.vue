@@ -1,5 +1,5 @@
 <template>
-  <div style="font-family: SmoochSans; color: black;" class="bg-dark text-SmoochSans ">
+  <div style="font-family: Afacad; color: white;" class="bg-dark text-SmoochSans ">
     <NavbarItem></NavbarItem>
     <HeaderItem></HeaderItem>
     <ChartOne></ChartOne>

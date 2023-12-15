@@ -11991,6 +11991,16 @@ textarea.form-control-lg {
   font-family: "SmoochSansSemiBold";
   src: url(./assets/fonts/SmoochSans-SemiBold.ttf);
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url(./assets/fonts/static/Afacad-Regular.ttf);
+}
 /* @font-face {
   font-family: "Inter-Bold";
   src: url(assets/fonts/Inter-Bold.ttf);
@@ -12000,9 +12010,9 @@ textarea.form-control-lg {
   src: url(assets/fonts/Inter-Light.ttf);
 } */
 body {
-  font-family: "SmoochSans", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   line-height: 200%, !important;
-  background-color: white;
+  background-color: black;
 }
 
 .slideRight:hover {

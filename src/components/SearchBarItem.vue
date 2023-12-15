@@ -11,25 +11,22 @@
             <input type="checkbox" name="allPlayers">
             <label for="allPlayers">All Players</label>
         </div>
-        <p>Search Players</p>
-        <input type="text" placeholder="Search Players"  v-model="searchTermPlayer" @input="searchPlayers()">
-        <p>Search Teams</p>
-        <input type="text" placeholder="Search Teams"  v-model="searchTermTeam" @input="searchTeams()">
+        <input type="text" name="Search Players" placeholder="Search Players"  v-model="searchTermPlayer" @input="searchPlayers()">
+        <input type="text" name="Search Teams" placeholder="Search Teams"  v-model="searchTermTeam" @input="searchTeams()">
         <ul style="background-color: black;" class="border bg-dark">
-            <li style="font-size: xx-large; list-style-type: none;" class="bg-dark">{{ playersFullName }}: {{playerID}}</li>
+            <li style="font-size: xx-large; list-style-type: none;" class="bg-dark">Player: {{ playersFullName }}: {{playerID}}</li>
+            <li style="font-size: xx-large; list-style-type: none;" class="bg-dark">Team: {{ teamFullName }}: {{teamID}}</li>
         </ul>
         <div>
             <button @click="getCareerStats()">Career Statistics</button><br>
-            <button>Other Statistics</button><br>
-            <button>Other Statistics</button>
+            <button>Team Gamelog</button><br>
         </div>
         <div>
-            <h1>career_stats</h1>
+            <h1>stats</h1>
             <p> {{  careerStats }}</p>
         </div>
         <div>
-            <h1>parameters</h1>
-            <p> {{  playersPTS }}</p>
+
         </div>
     </div>
 </template>
@@ -40,11 +37,14 @@ export default {
     data() {
         return {
             searchTermPlayer: '',
-            searchTermTeam: '',
             playersFullName: '',
             playerID: {type: Number},
             careerStats: '',
             playersPTS: '',
+
+            searchTermTeam: '',
+            teamFullName: '',
+            teamID: {type: Number},
         }
     },
         methods: {
@@ -70,8 +70,8 @@ export default {
                 }
             })
             this.teams = teams.data[0]
-            this.teamsFullName = this.teams["full_name"]
-            this.playerID = this.teams["id"]
+            this.teamFullName = this.teams["full_name"]
+            this.teamID = this.teams["id"]
             } catch (error) {
                 console.error(error)
             }

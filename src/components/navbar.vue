@@ -1,7 +1,7 @@
 <template lang="">
-    <nav class="navbar navbar-expand-lg border-bottom border-white border-danger">
+    <nav  class="navbar navbar-expand-lg border-bottom border-white border-danger">
         <div class="container mh-100 ">
-            <a style="color: red" class="navbar-brand" href="">
+            <a style="color: red" class="navbar-brand logo" href="">
                 STATMANN
                 <!-- <img class="" src="../assets/images/Group 11.png" alt=""> -->
             </a>
@@ -32,6 +32,13 @@ export default {
 }
 </script>
 <style lang="css">
+    nav {
+        font-family: SmoochSansSemiBold;
+        font-size: x-large;
+    }
+    .logo {
+        font-size: xx-large;
+    }
     img {
         max-height: 25px;
     }
