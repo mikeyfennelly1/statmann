@@ -1,7 +1,7 @@
 <template lang="">
     <nav  class="navbar navbar-expand-lg border-bottom border-white border-danger">
         <div class="container mh-100 ">
-            <a style="color: red" class="navbar-brand logo" href="">
+            <a style="color: red; font-size: xxx-large; font-family: SmoochSansSemiBold;" class="navbar-brand logo" href="">
                 STATMANN
                 <!-- <img class="" src="../assets/images/Group 11.png" alt=""> -->
             </a>
@@ -33,7 +33,7 @@ export default {
 </script>
 <style lang="css">
     nav {
-        font-family: SmoochSansSemiBold;
+        font-family: SmoochSans;
         font-size: x-large;
     }
     .logo {
