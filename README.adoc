@@ -1,0 +1,5 @@
+= statmann
+
+== What is statmann?
+
+statmann is a SaaS platform that allows basketball geeks to configure, analyse and compare all sorts of real NBA statistics in a graphical fashion.
