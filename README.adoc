@@ -5,3 +5,10 @@
 statmann is a SaaS platform that allows basketball geeks to configure, analyse and compare all sorts of real NBA statistics in a graphical fashion. 
 
 It uses the NBA API to obtain datasets, both live and historic that can be selected and manipulated based on the users preference. For example if you wanted to do a statistical analysis on if Nikola Jokic or Joel Embiid were better players, you could use statmann to compare the two side by side in a human intuitive graphical fashion. statmann offers both box score statistics, and advanced statistics for players, but also teams and franchises from NBA history.
+
+== My goals and learnings while making statmann
+
+This is my third project and I hope to employ my new knowledge in all things backend and data science. While creating CharlemagneDB, I was also learning about the concepts of distributed systems and data science.
+
+1. *Design*: The design for this app will be a distributed system, probably with a microservice architechture
+2. *Development*: Learn how to use: Java and Kubernetes
