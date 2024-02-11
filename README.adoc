@@ -11,4 +11,4 @@ It uses the NBA API to obtain datasets, both live and historic that can be selec
 This is my third project and I hope to employ my new knowledge in all things backend and data science. While creating CharlemagneDB, I was also learning about the concepts of distributed systems and data science.
 
 1. *Design*: The design for this app will be a distributed system, probably with a microservice architechture
-2. *Development*: Learn how to use: Java and Kubernetes
+2. *Development*: Learn how to use: Java, Kubernetes, AWS services such as EKS (elastic Kubernetes Service), ELB (Elastic Load Balancer), EC2 (Elastic Compute Cloud), MYSQL/Postgres (yet to chose, but also some sort of cache technology such as Redis or Memcached), Numpy, Pandas, Scikitlearn.
