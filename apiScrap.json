@@ -1,0 +1,119 @@
+{
+    "PLAYERS": {
+        // COMMONALITY1
+        "GENERAL": {
+            // COMMONALITY1.1
+            "TRADITIONAL": {
+                "SEASON": {},
+                "SEASON_TYPE": {},
+                "PER_MODE": {},
+                "SEASON_SEGMENT": {},
+            },
+            "ADVANCED": {"TRADITIONAL"},
+            "SCORING": {"TRADITIONAL"},
+            "USAGE": {"TRADITIONAL"},
+            "OPPONENT": {"TRADITIONAL"},
+            "DEFENCE": {"TRADITIONAL"},
+            "ESTIMATED ADVANCED": {
+                "SEASON": {},
+                "SEASON_TYPE": {},
+            },
+        },
+        "CLUTCH": {
+            "TRADITIONAL": {"TRADITIONAL"},
+            "ADVANCED": {"TRADITIONAL"},
+            "MISCELLANEOUS": {"TRADITIONAL"},
+            "USAGE": {"TRADITIONAL"},
+        },
+        "PLAYTYPE": {
+            "ISOLATION": {
+                // THIS IS (TRADITIONAL - SEASON_SEGMENT + OFFENSIVE_OR_DEFENSIVE
+                "SEASON": {},
+                "TYPE": {},
+                "PER_MODE": {},
+
+                "OFFENSIVE_OR_DEFENSIVE": {},
+            },
+            "TRANSITION": {"PLAYTYPE/ISOLATION"},
+            "PICK & ROLL BALL HANDLER": {"PLAYTYPE/ISOLATION"},
+            "PICK & ROLL MAN": {"PLAYTYPE/ISOLATION"},
+            "POST UP": {"PLAYTYPE/ISOLATION"},
+            "SPOT UP": {"PLAYTYPE/ISOLATION"},
+            "HANDOFF": {"PLAYTYPE/ISOLATION"},
+            "CUT": {"PLAYTYPE/ISOLATION"},
+            "OFF_SCREEN": {"PLAYTYPE/ISOLATION"},
+            "PUTBACKS": {"PLAYTYPE/ISOLATION"},
+            "MISCELLANEOUS": {"PLAYTYPE/ISOLATION"},
+        },
+        "TRACKING": {
+            "DRIVES": {"TRADITIONAL"},
+            "DEFENSIVE_IMPACT": {"TRADITIONAL"},
+            "CATCH&SHOOT": {"TRADITIONAL"},
+            "PASSING": {"TRADITIONAL"},
+            "TOUCHES": {"TRADITIONAL"},
+            "PULL_UP_SHOOTING": {"TRADITIONAL"},
+            "REBOUNDING": {"TRADITIONAL"},
+            "OFFENSIVE_REBOUNDING": {"TRADITIONAL"},
+            "DEFENSIVE_REBOUNDING": {"TRADITIONAL"},
+            "SHOOTING_EFFICIENCY": {"TRADITIONAL"},
+            "SPEED&DISTANCE": {"TRADITIONAL"},
+            "ELBOW_TOUCHES": {"TRADITIONAL"},
+            "POST_UPS": {"TRADITIONAL"},
+            "PAINT_TOUCHES": {"TRADITIONAL"},
+        },
+        "DEFENSE_DASHBOARD": {
+            "OVERALL": {"TRADITIONAL"},
+            "DEFENSIVE_IMPACT": {"TRADITIONAL"},
+            "CATCH_AND_SHOOT": {"TRADITIONAL"},
+            "PASSING": {"TRADITIONAL"},
+            "TOUCHES": {"TRADITIONAL"},
+            "PULL_UP_SHOOTING": {"TRADITIONAL"},
+        },
+        "SHOT_DASHBOARD": {
+            "GENERAL": {"TRADITIONAL- SEASON_SEGMENT" + SHOT_RANGE},
+            "SHOTCLOCK": {"TRADITIONAL- SEASON_SEGMENT" + SHOT_CLOCK_RANGE},
+            "DRIBBLES": {"TRADITIONAL- SEASON_SEGMENT" + DRIBBLE_RANGE},
+            "TOUCH_TIME": {"TRADITIONAL- SEASON_SEGMENT" + TOUCH_TIME_RANGE},
+            "CLOSEST_DEFENDER": {"TRADITIONAL- SEASON_SEGMENT" + CLOSEST_DEFENDER_DISTANCE_RANGE},
+            "CLOSEST_DEFENDER+10": {"TRADITIONAL- SEASON_SEGMENT" + CLOSEST_DEFENDER_DISTANCE_RANGE},
+        },
+        "BOX_SCORES": {
+            "SEASON": {},
+            "SEASON_TYPE": {}
+        },
+        "ADVANCED_BOX_SCORES": {
+            "TRADITIONAL":{"TRADITIONAL - PER_MODE"},
+            "ADVANCED":{"TRADITIONAL - PER_MODE"},
+            "MISCELLANEOUS":{"TRADITIONAL - PER_MODE"},
+            "SCORING":{"TRADITIONAL - PER_MODE"},
+            "USAGE":{"TRADITIONAL - PER_MODE"}
+        },
+        "SHOOTING": {"TRADITIONAL - SEASON SEGMENT + DISTANCE_RANGE"},
+        "OPPONENT_SHOOTING": {"TRADITIONAL - SEASON SEGMENT + DISTANCE_RANGE"},
+        "HUSTLE": {"TRADITIONAL"},
+        "BOX_OUTS": {"TRADITIONAL"}
+    },
+    "TEAMS": {
+        // COMMONALITY1
+        "GENERAL": {
+            // COMMONALITY1.1
+            {"PLAYERS/GENERAL"}
+        },
+        "CLUTCH": {},
+        "PLAYTYPE": {},
+        "TRACKING": {},
+        "DEFENSE_DASHBOARD": {},
+        "SHOT_DASHBOARD": {},
+        "BOX_SCORES": {},
+        "ADVANCED_BOX_SCORES": {},
+        "SHOOTING": {},
+        "OPPONENT_SHOOTING": {},
+        "HUSTLE": {},
+        "BOX_OUTS": {},
+    }
+}
+
+
+{
+    ["SEASON", "SEASON_TYPE", "PER_MODE", "SEASON_SEGMENT", "OFFENSIVE_OR_DEFENSIVE", "CLOSEST_DEFENDER_DISTANCE_RANGE", "TOUCH_TIME_RANGE", "DRIBBLE_RANGE", "SHOT_CLOCK_RANGE", "SHOT_RANGE"]
+}
